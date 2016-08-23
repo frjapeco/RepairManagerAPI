@@ -23,27 +23,41 @@
 </table>
 <ul>
   <li>
-    Get all statuses existing in database:<br>
+    Login and get token:<br>
+    <code>GET http:[URL_SERVER]/api/login</code>
+    <pre>
+{
+  "username" : "Jon.Snow",
+  "password" : "123456"
+}
+    </pre>
+  </li>
+  <li>
+    Get all statuses existing in database (all users)<br>
     <code>GET http:[URL_SERVER]/api/statuses</code>
   </li>
   <li>
-    Get info about certain status:<br>
+    Get info about certain status (all users)<br>
     <code>GET http:[URL_SERVER]/api/statuses/$id</code>
   </li>
   <li>
-    Get all models existing in database:<br>
+    Get all models existing in database (all users)<br>
     <code>GET http:[URL_SERVER]/api/models</code>
   </li>
   <li>
-    Get info about certain model:<br>
+    Get info about certain model (all users)<br>
     <code>GET http:[URL_SERVER]/api/models/$id</code>
   </li> 
   <li>
-    Get all incidences existing in database:<br>
+    List all incidences existing in database (technician)<br>
     <code>GET http:[URL_SERVER]/api/incidences</code>
   </li>
   <li>
-    Get info about certain incidence:<br>
+    List all incidences existing in database (technician)<br>
+    <code>GET http:[URL_SERVER]/api/incidences?status=PENDING&technician=Jon.Snow&searchPattern=iphone</code>
+  </li>
+  <li>
+    Get info about certain incidence (all users)<br>
     <code>GET http:[URL_SERVER]/api/incidences/$id</code>
   </li>
   <li>
@@ -51,7 +65,19 @@
     <code>POST http:[URL_SERVER]/api/incidences</code><br>
     JSON Example:<br>
     <pre>
-
+{
+    "sn" : "123456789",
+    "model" : { "id" : 1 },
+    "status" : { "id" : 1 },
+    "description" : "The cellphone is broken",
+    "clientName" : "Mr. Noname",
+    "clientMail" : "mrnoname@mail.net",
+    "clientAddress" : "1th Ave.",
+    "clientPostcode" : "123abc",
+    "clientPhone" : "+1 555 123 456",
+    "clientCity" : "Albuquerque"
+}
     </pre>
+  </li>
 </ul>
 
