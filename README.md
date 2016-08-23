@@ -57,7 +57,7 @@
     <code>GET http:[URL_SERVER]/api/incidences?status=PENDING&technician=Jon.Snow&searchPattern=iphone</code>
   </li>
   <li>
-    It returns the total number of incidences that match with the search filters (technician)<br>
+    Return the total number of incidences that match with the search filters (technician)<br>
     <code>GET http:[URL_SERVER]/api/incidences/count?status=PENDING&technician=Jon.Snow&searchPattern=iphone</code>
   </li>
   <li>
