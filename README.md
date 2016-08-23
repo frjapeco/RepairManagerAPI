@@ -9,16 +9,16 @@
 <p>Next are avalibable users:</p>
 <table>
   <tr>
-    <th>Username</th><th>Password</th>
+    <th>Username</th><th>Password</th><th>Role</th>
   </tr>
   <tr>
-    <td>Guest</td><td>123456</td>
+    <td>Guest</td><td>123456</td><td>Guest</td>
   </tr>
   <tr>
-    <td>Sansa.Stark</td><td>123456</td>
+    <td>Sansa.Stark</td><td>123456</td><td>Technician</td>
   </tr>
   <tr>
-    <td>Jon.Snow</td><td>123456</td>
+    <td>Jon.Snow</td><td>123456</td><td>Technician</td>
   </tr>
 </table>
 <ul>
