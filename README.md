@@ -5,7 +5,7 @@
   cellphone repairs. It works together with <strong>RepairManagerClient</strong> app.
 </p>
 <h2>Interface</h2>
-<p>First of all you need to get an apropiate token before to make any request.<p>
+<p>First of all you need get an appropriate token before to make any request.<p>
 <p>Next are avalibable users:</p>
 <table>
   <tr>
