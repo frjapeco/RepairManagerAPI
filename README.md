@@ -2,7 +2,7 @@
 <h2>Overview</h2>
 <p>
   <strong>RepairManagerAPI</strong> is a RESTful API which provides a set of endpoints for create, update and manage
-  cellphone repairs. It works together with <strong>RepairManagerClient</strong> app.
+  cellphone repairs. It works together with <a href="https://github.com/frjapeco/RepairManagerClient">RepairManagerClient</a> app.
 </p>
 <h2>Interface</h2>
 <p>First of all you need get an appropriate token before to make any request.<p>
