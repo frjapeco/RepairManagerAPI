@@ -24,7 +24,8 @@
 <ul>
   <li>
     Login and get token:<br>
-    <code>GET http:[URL_SERVER]/api/login</code>
+    <code>GET http:[URL_SERVER]/api/login</code><br>
+    JSON Example:
     <pre>
 {
   "username" : "Jon.Snow",
