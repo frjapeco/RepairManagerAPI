@@ -53,15 +53,19 @@
     <code>GET http:[URL_SERVER]/api/incidences</code>
   </li>
   <li>
-    List all incidences existing in database (technician)<br>
+    List all incidences using search filters (technician)<br>
     <code>GET http:[URL_SERVER]/api/incidences?status=PENDING&technician=Jon.Snow&searchPattern=iphone</code>
+  </li>
+  <li>
+    It returns the total number of incidences that match with the search filters (technician)<br>
+    <code>GET http:[URL_SERVER]/api/incidences/count?status=PENDING&technician=Jon.Snow&searchPattern=iphone</code>
   </li>
   <li>
     Get info about certain incidence (all users)<br>
     <code>GET http:[URL_SERVER]/api/incidences/$id</code>
   </li>
   <li>
-    Create a new incidence:<br>
+    Create a new incidence (technician)<br>
     <code>POST http:[URL_SERVER]/api/incidences</code><br>
     JSON Example:<br>
     <pre>
@@ -78,6 +82,23 @@
     "clientCity" : "Albuquerque"
 }
     </pre>
+  <li>
+    Edit an existing incidence (technician)<br>
+    <code>PUT http:[URL_SERVER]/api/incidences/$id</code><br>
+    JSON Example:<br>
+        <pre>
+{
+    "sn" : "987654321",
+}
+        </pre>
+  </li>
+  <li>
+    Assign certain incidence to the current user (technician)<br>
+    <code>PUT http:[URL_SERVER]/api/incidences/$id/assignToMe</code><br>
+  </li>
+  <li>
+    Delete assigned technician from certain incidence (technician)<br>
+    <code>PUT http:[URL_SERVER]/api/incidences/$id/free</code><br>
   </li>
 </ul>
 
