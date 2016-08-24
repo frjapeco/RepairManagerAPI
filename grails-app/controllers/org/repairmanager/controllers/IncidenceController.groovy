@@ -170,6 +170,7 @@ class IncidenceController extends RestfulController {
         validate(incidence)
         incidence.save()
         response.status = 200
+        respond incidence.technician
     }
 
     @Secured('ROLE_TECHNICIAN')
@@ -182,6 +183,7 @@ class IncidenceController extends RestfulController {
             throw new DeniedAccessException()
         incidence.technician = null
         validate(incidence)
+        incidence.save()
         response.status = 200
     }
 }
