@@ -66,7 +66,7 @@
     <code>GET http:[URL_SERVER]/api/incidences/$id</code>
   </li>
   <li>
-    Create a new incidence (technician)<br>
+    Create a new incidence (all users)<br>
     <code>POST http:[URL_SERVER]/api/incidences</code><br>
     JSON Example:<br>
     <pre>
