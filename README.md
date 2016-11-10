@@ -95,11 +95,11 @@
   </li>
   <li>
     Assign certain incidence to the current user (technician)<br>
-    <code>PUT http:[URL_SERVER]/api/incidences/$id/assignToMe</code><br>
+    <code>POST http:[URL_SERVER]/api/incidences/$id/assignee</code><br>
   </li>
   <li>
     Delete assigned technician from certain incidence (technician)<br>
-    <code>PUT http:[URL_SERVER]/api/incidences/$id/free</code><br>
+    <code>DELETE http:[URL_SERVER]/api/incidences/$id/assignee</code><br>
   </li>
 </ul>
 
