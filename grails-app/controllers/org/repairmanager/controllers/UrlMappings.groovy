@@ -1,3 +1,5 @@
+package org.repairmanager.controllers
+
 import org.repairmanager.exceptions.*
 
 class UrlMappings {
@@ -7,8 +9,7 @@ class UrlMappings {
         group ("/api") {
             "/incidences"                           (resources: 'incidence')
             "/incidences/count"                     (controller: 'incidence', action: 'count')
-            "/incidences/$id/assignToMe"            (controller: 'incidence', action: 'assignToMe')
-            "/incidences/$id/free"                  (controller: 'incidence', action: 'free')
+            "/incidences/$id/assignee"              (controller: 'incidence', action: [POST: 'assignToMe', DELETE: 'free'])
             "/statuses"                             (resources: 'status', includes: ['index','show'])
             "/models"                               (resources: 'model', includes: ['index','show'])
             "/users"                                (resources: 'user', includes: ['index','show'])

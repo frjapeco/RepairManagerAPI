@@ -20,7 +20,7 @@ beans = {
     }
 
     userJSONRenderer(JsonRenderer,User) {
-        excludes = ['class','incidences']
+        includes = ['id','username']
     }
 
     corsFilter(CorsFilter)

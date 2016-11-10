@@ -18,7 +18,7 @@ import org.repairmanager.jwt.JwtDecoder
 
 class IncidenceController extends RestfulController {
     static responseFormats = ['json']
-    static allowedMethods = [count: ['GET'], assignToMe: ['PUT'], free: ['PUT']]
+    static allowedMethods = [count: ['GET'], assignToMe: ['POST'], free: ['DELETE']]
 
     IncidenceController() {
         super(Incidence)
